@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<curso>
+  <nombre>Desarrollo Web</nombre>
+  <nivel>inicial</nivel>
+  <temas>
+    <tema>html</tema>
+    <tema>css</tema>
+    <tema>xml</tema>
+    <tema>json</tema>
+  </temas>
+  <activo>true</activo>
+</curso>

@@ -1,0 +1,34 @@
+:root {
+  --fondo: #f3f7fb;
+  --texto: #1f2937;
+  --acento: #0f766e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+}
+
+.card {
+  max-width: 560px;
+  margin: 48px auto;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #dbe4ee;
+}
+
+button {
+  background: var(--acento);
+  color: #ffffff;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
