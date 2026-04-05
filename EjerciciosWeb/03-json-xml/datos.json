@@ -1,0 +1,6 @@
+{
+  "curso": "Desarrollo Web",
+  "nivel": "inicial",
+  "temas": ["html", "css", "xml", "json"],
+  "activo": true
+}
