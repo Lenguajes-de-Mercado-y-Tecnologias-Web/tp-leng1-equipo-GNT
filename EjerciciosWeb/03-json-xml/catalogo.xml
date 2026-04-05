@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<curso>
-  <nombre>Desarrollo Web</nombre>
-  <nivel>inicial</nivel>
-  <temas>
-    <tema>html</tema>
-    <tema>css</tema>
-    <tema>xml</tema>
-    <tema>json</tema>
-  </temas>
-  <activo>true</activo>
-</curso>
+<catalogo version="2.1" fecha="2025-04-01" empresa="TurismoYa S.A.">
+  <destino id="D001">
+    <nombre>Cataratas del Iguazú</nombre>
+    <pais>Argentina</pais>
+    <precio_usd>320</precio_usd>
+    <duracion_dias>4</duracion_dias>
+    <descripcion>Patrimonio Natural de la Humanidad.</descripcion>
+  </destino>
+
+  <destino id="D002">
+    <nombre>Torres del Paine</nombre>
+    <pais>Chile</pais>
+    <precio_usd>580</precio_usd>
+    <duracion_dias>7</duracion_dias>
+    <descripcion>Trekking en la Patagonia.</descripcion>
+  </destino>
+
+  <destino id="D003">
+    <nombre>Machu Picchu</nombre>
+    <pais>Perú</pais>
+    <precio_usd>750</precio_usd>
+    <duracion_dias>5</duracion_dias>
+    <descripcion>Ciudadela Inca en la cima de la montaña.</descripcion>
+  </destino>
+</catalogo>
