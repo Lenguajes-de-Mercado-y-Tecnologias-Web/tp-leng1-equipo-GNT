@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trabajo Practico</title>
-  </head>
-  <body>
-    <main>
-      <h1>Trabajo Practico</h1>
-      <p>Este es el archivo que se esta mostrando en pantalla.</p>
-      <!-- <p>Si no ves cambios, guarda el archivo y recarga la vista previa.</p> -->
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Huertas y Compost - ONG Verde</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ONG Verde</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#compost">Compostaje</a></li>
+        <li><a href="#calendario">Calendario de Siembra</a></li>
+        <li><a href="#tratamientos">Tratamientos Naturales</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>Promovemos la agricultura urbana y el compostaje comunitario para un futuro más sostenible.</p>
+  </section>
+
+  <section id="compost">
+    <h2>Proceso de Compostaje</h2>
+    <ol>
+      <li>Preparar la tierra</li>
+      <li>Recolectar restos orgánicos</li>
+      <li>Armar la compostera</li>
+      <li>Obtener abono natural</li>
+    </ol>
+  </section>
+
+  <section id="calendario">
+    <h2>Calendario de Siembra</h2>
+    <table>
+      <tr><th>Mes</th><th>Semillas</th></tr>
+      <tr><td>Marzo</td><td>Tomate, lechuga</td></tr>
+      <tr><td>Abril</td><td>Zanahoria, espinaca</td></tr>
+    </table>
+  </section>
+
+  <section id="tratamientos">
+    <h2>Tratamientos Naturales</h2>
+    <p>Usamos preparados caseros como infusión de ajo o jabón potásico para cuidar las plantas.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Sumate</h2>
+    <form action="https://formsubmit.co/diego.goso1@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nueva solicitud desde ONG Verde">
+      <input type="hidden" name="_autoresponse" value="Tu solicitud fue aceptada. Gracias por sumarte a ONG Verde.">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/trabajo%20practico/index.html?enviado=1#contacto">
+
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input id="email" type="email" name="email" required>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje-envio" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer>
+    <p>© 2026 ONG Verde</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const mensaje = document.getElementById("mensaje-envio");
+
+    if (params.get("enviado") === "1") {
+      mensaje.textContent = "Solicitud enviada y aceptada. Revisa tu correo para la respuesta automatica.";
+    }
+  </script>
+</body>
 </html>
