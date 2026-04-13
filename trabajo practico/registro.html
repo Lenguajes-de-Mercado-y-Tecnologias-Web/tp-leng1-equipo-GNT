@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - ONG Verde</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ONG Verde</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Volver al inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Formulario de participación</h2>
+    <p>Completa tus datos para ayudarte a elegir cultivos y cuidados adecuados para tu zona.</p>
+
+    <form method="GET">
+      <label for="nombre">Nombre:</label>
+      <input id="nombre" type="text" name="nombre" required>
+
+      <label for="ocupacion">¿A qué te dedicás?</label>
+      <input id="ocupacion" type="text" name="ocupacion" required>
+
+      <label for="zona">¿De qué zona sos?</label>
+      <input id="zona" type="text" name="zona" required>
+
+      <p class="texto-ayuda">Elegí tu clima para enviar y ver recomendaciones de plantación.</p>
+      <div class="acciones-clima">
+        <button type="submit" formaction="gracias.html#templado">Enviar (Templado)</button>
+        <button type="submit" formaction="gracias.html#calido">Enviar (Cálido)</button>
+        <button type="submit" formaction="gracias.html#frio">Enviar (Frío)</button>
+        <button type="submit" formaction="gracias.html#seco">Enviar (Seco)</button>
+        <button type="submit" formaction="gracias.html#humedo">Enviar (Húmedo)</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 ONG Verde</p>
+  </footer>
+</body>
+</html>

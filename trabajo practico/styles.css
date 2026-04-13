@@ -1,0 +1,120 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	background: #f4f8f4;
+	color: #1f2a1f;
+}
+
+header,
+section,
+footer {
+	padding: 20px;
+}
+
+h2 {
+	color: #2f6b3a;
+}
+
+form {
+	max-width: 520px;
+	background: #ffffff;
+	border: 1px solid #c9d8c9;
+	border-radius: 12px;
+	padding: 18px;
+	box-shadow: 0 6px 18px rgba(47, 107, 58, 0.08);
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin: 12px 0 6px;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	border: 1px solid #98b39a;
+	border-radius: 8px;
+	font: inherit;
+}
+
+button {
+	margin-top: 16px;
+	padding: 10px 16px;
+	border: 0;
+	border-radius: 8px;
+	background: #2f6b3a;
+	color: #ffffff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #24552d;
+}
+
+.texto-ayuda {
+	margin: 14px 0 10px;
+	font-weight: bold;
+	color: #2f6b3a;
+}
+
+.acciones-clima {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.acciones-clima button {
+	margin-top: 0;
+}
+
+.tabla-clima {
+	display: none;
+	margin: 16px 0;
+}
+
+.tabla-clima:target {
+	display: block;
+}
+
+.aviso-clima {
+	font-style: italic;
+	color: #355c3d;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 12px;
+	background: #ffffff;
+	border: 2px solid #2f6b3a;
+}
+
+caption {
+	caption-side: top;
+	font-weight: bold;
+	color: #2f6b3a;
+	margin-bottom: 8px;
+}
+
+th,
+td {
+	border: 1px solid #2f6b3a;
+	padding: 10px 12px;
+	text-align: left;
+}
+
+th {
+	background: #2f6b3a;
+	color: #ffffff;
+}
+
+tr:nth-child(even) td {
+	background: #eef6ee;
+}
