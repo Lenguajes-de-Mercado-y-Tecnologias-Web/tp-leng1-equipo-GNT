@@ -3,8 +3,8 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
-	background: #f4f8f4;
-	color: #1f2a1f;
+	background: honeydew;
+	color: darkslategray;
 }
 
 header,
@@ -14,13 +14,36 @@ footer {
 }
 
 h2 {
-	color: #2f6b3a;
+	color: seagreen;
+}
+
+.imagen-huerta {
+	max-width: 520px;
+	margin: 14px 0 18px;
+	padding: 10px;
+	background: white;
+	border: 1px solid gainsboro;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(47, 107, 58, 0.08);
+}
+
+.imagen-huerta img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.imagen-huerta figcaption {
+	margin-top: 8px;
+	font-size: 0.95rem;
+	color: darkolivegreen;
 }
 
 form {
 	max-width: 520px;
-	background: #ffffff;
-	border: 1px solid #c9d8c9;
+	background: white;
+	border: 1px solid gainsboro;
 	border-radius: 12px;
 	padding: 18px;
 	box-shadow: 0 6px 18px rgba(47, 107, 58, 0.08);
@@ -38,7 +61,7 @@ textarea {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 10px 12px;
-	border: 1px solid #98b39a;
+	border: 1px solid darkseagreen;
 	border-radius: 8px;
 	font: inherit;
 }
@@ -48,20 +71,20 @@ button {
 	padding: 10px 16px;
 	border: 0;
 	border-radius: 8px;
-	background: #2f6b3a;
-	color: #ffffff;
+	background: seagreen;
+	color: white;
 	font-weight: bold;
 	cursor: pointer;
 }
 
 button:hover {
-	background: #24552d;
+	background: darkgreen;
 }
 
 .texto-ayuda {
 	margin: 14px 0 10px;
 	font-weight: bold;
-	color: #2f6b3a;
+	color: seagreen;
 }
 
 .acciones-clima {
@@ -85,36 +108,48 @@ button:hover {
 
 .aviso-clima {
 	font-style: italic;
-	color: #355c3d;
+	color: darkolivegreen;
 }
 
 table {
 	width: 100%;
 	border-collapse: collapse;
 	margin-top: 12px;
-	background: #ffffff;
-	border: 2px solid #2f6b3a;
+	background: white;
+	border: 2px solid seagreen;
 }
 
 caption {
 	caption-side: top;
 	font-weight: bold;
-	color: #2f6b3a;
+	color: seagreen;
 	margin-bottom: 8px;
 }
 
 th,
 td {
-	border: 1px solid #2f6b3a;
+	border: 1px solid seagreen;
 	padding: 10px 12px;
 	text-align: left;
 }
 
 th {
-	background: #2f6b3a;
-	color: #ffffff;
+	background: seagreen;
+	color: white;
 }
 
 tr:nth-child(even) td {
-	background: #eef6ee;
+	background: mintcream;
+}
+
+@media (max-width: 640px) {
+	header,
+	section,
+	footer {
+		padding: 14px;
+	}
+
+	.acciones-clima button {
+		width: 100%;
+	}
 }
