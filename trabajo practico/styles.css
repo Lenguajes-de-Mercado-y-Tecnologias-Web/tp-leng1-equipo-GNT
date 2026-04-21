@@ -13,6 +13,25 @@ footer {
 	padding: 20px;
 }
 
+header {
+	position: relative;
+	padding-right: 220px;
+}
+
+.logo-link {
+	position: fixed;
+	top: 14px;
+	right: 20px;
+	display: inline-block;
+	z-index: 1000;
+}
+
+.site-logo {
+	width: 170px;
+	height: auto;
+	display: block;
+}
+
 h2 {
 	color: seagreen;
 }
@@ -147,6 +166,20 @@ tr:nth-child(even) td {
 	section,
 	footer {
 		padding: 14px;
+	}
+
+	header {
+		padding-right: 14px;
+		padding-top: 82px;
+	}
+
+	.logo-link {
+		top: 10px;
+		right: 14px;
+	}
+
+	.site-logo {
+		width: 140px;
 	}
 
 	.acciones-clima button {

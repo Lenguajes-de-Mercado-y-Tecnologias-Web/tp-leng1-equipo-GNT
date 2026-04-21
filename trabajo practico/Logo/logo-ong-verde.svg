@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 56" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Logo ONG Verde</title>
+  <desc id="logoDesc">Hoja verde con el texto ONG Verde</desc>
+  <rect width="180" height="56" rx="14" fill="#e6f6e6"/>
+  <g transform="translate(12 8)">
+    <path d="M24 40C10 30 10 12 28 6C40 2 54 8 58 18C62 30 50 42 36 42C31 42 27 41 24 40Z" fill="#2e8b57"/>
+    <path d="M23 35C27 26 34 18 45 10" stroke="#f2fff2" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="78" y="26" font-family="Verdana, Geneva, sans-serif" font-size="13" font-weight="700" fill="#1f5a36">ONG</text>
+  <text x="78" y="42" font-family="Verdana, Geneva, sans-serif" font-size="16" font-weight="700" fill="#2e8b57">VERDE</text>
+</svg>
