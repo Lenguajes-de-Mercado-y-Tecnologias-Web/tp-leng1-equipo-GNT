@@ -7,9 +7,9 @@ body {
 	color: darkslategray;
 }
 
-header,
 section {
 	padding: 20px;
+	margin-bottom: 20px;
 }
 
 footer {
@@ -22,6 +22,8 @@ footer {
 }
 
 header {
+	padding: 20px;
+	margin-bottom: 20px;
 	position: relative;
 	padding-right: 220px;
 }
@@ -78,10 +80,6 @@ article {
 	border-left: 4px solid seagreen;
 }
 
-section {
-	margin-bottom: 20px;
-}
-
 iframe {
 	max-width: 100%;
 	height: auto;
@@ -110,9 +108,7 @@ article table img {
 	border-radius: 8px;
 }
 
-table {
-	border-collapse: collapse;
-}
+
 
 
 .imagen-huerta {
@@ -210,6 +206,7 @@ button:hover {
 }
 
 table {
+	border-collapse: collapse;
 	width: 100%;
 	margin-top: 12px;
 	background: white;
@@ -240,14 +237,14 @@ tr:nth-child(even) td {
 }
 
 @media (max-width: 640px) {
-	header,
-	section {
-		padding: 14px;
-	}
-
 	header {
+		padding: 14px;
 		padding-right: 14px;
 		padding-top: 82px;
+	}
+
+	section {
+		padding: 14px;
 	}
 
 	.logo-link {
