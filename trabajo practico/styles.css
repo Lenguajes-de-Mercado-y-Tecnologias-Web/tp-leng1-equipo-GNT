@@ -260,3 +260,60 @@ tr:nth-child(even) td {
 		width: 100%;
 	}
 }
+.wa-flotante-container {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    font-family: Arial, sans-serif;
+}
+
+
+.wa-boton-principal {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px; /* Forma de cápsula */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+.wa-contacto {
+    display: none; 
+    background-color: seagreen !important; 
+    color: white !important; 
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+
+
+.wa-flotante-container:hover .wa-contacto {
+    display: flex;
+}
+
+
+.wa-contacto:hover {
+    background-color: #2e8b57 !important; /* Un verde un poquito más oscuro */
+    transform: translateX(-5px);
+}
+
+.wa-contacto i {
+    color: white !important;
+}

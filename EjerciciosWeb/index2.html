@@ -1,0 +1,66 @@
+<!doctype html> <!-- define que el documento es html-->
+<html lang="es">
+    <head><!-- seccion de configuaracion no visible para el usuario-->
+        <meta charset="UTF-8"> <!--permite tildes y al letra ñ-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- esta prepaparado para celulaleres-->
+        <title>Patitas Felices | Veterinaria </title><!--titulo de la pestaña-->   
+        <link rel="stylesheet" href="clasesstyles.css"><!-- conecta este html con tu stilo css-->
+    </head>
+    <body><!--comienzo de todo lo visible-->
+        <header><!--suele contener el elogo y el menu-->
+            <div class="container header-flex"><!--contaiener centar el contenidoy header fñex alinea logo y menu -->
+             <h1>Patitas<span>Felices</span></h1><!-- titulo h1 el mas inportante ,span se usa para pintar de naranja una parte-->
+            <nav><!-- etiqueta semantica para el menu de navegacion-->
+                <ul><!--lista desordanda para agregar los link-->
+                    <li><a href="#" class="activo">Inicio</a></li><!--item de lista con enlace . activo lo resalta-->
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Veterinarios</a></li>
+                    <li><a href="#">Turnos</a></li>
+               </ul>
+            </nav>
+            </div>
+       </header>
+       <main class="container"><!--contenido principal del sitio usamos container para el ancho de 1200 px -->
+      <!-- seccion hero . bienvenida con fondo verde-->
+       <section class="hero"><!-- una seccion tematica dentro de la pagina-->
+        <h2>Tu mascota en las mejores manos</h2>
+        <p> Veterinaria familiar con atencion personalizada y mucho amor</p><!--parrafo de texto-->
+       </section>
+      <section class="cursos-grid">
+        <article class="card"><!--indica que el contenido es indendiente8(como una ficha)-->
+           <h3>Clinica medica</h3> <!-- titulo de nivel 3 para cada tarjeta-->
+           <p>Controles de salud, vacunas y desparacitaciones.</p>
+        </article>
+        <article class="card">
+            <h3>Peluqueria canina</h3>
+            <p> Baños terapeuticos y cortes de raza profesionales</p>
+         </article>
+        <article class="card">
+            <h3>Cirugias</h3>
+            <p>Quirofano equipado y monitoreo profesional constante</p>
+        </article>
+       </section>
+       <!-- seccion equipo-->
+        <h2 style="text-align: center; margin: 2rem 0;">Nuestro equipo</h2>
+         <section class="profesores"><!-- usamos flexbox para centrar a los doctores-->
+            <div class="profe-item"><!--div: un contenedor generico para agrupar elementos-->
+            <div class="profe-avatar"></div><!--circulo gris para la foto del doctor-->
+           <p>Dr Carlos Gomez</p>
+           </div>
+           <div class="profe-item">
+            <div class="profe-avatar"></div>
+            <p>Dra Lucia Paz</p>
+           </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Patitas Felices Veterinaria.</p>
+            <p><a href="#">Urgencias</a>
+               <a href="#">whatsapp</a>           
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

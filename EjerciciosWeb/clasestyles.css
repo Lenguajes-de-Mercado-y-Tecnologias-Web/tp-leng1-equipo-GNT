@@ -1,0 +1,143 @@
+/* importscion de fuente externa*/
+/* traemos la tipografia ´lato´ desde los servidores de google*/
+@import url('https://googleapis.com');
+/* varoiables css*/
+/* aqui centrlizamos los colorers y medidad para cambiarlos rapido en un solo lugar*/
+:root{
+    --verde-bosque:#2D5A27;/* color principal para fondos */
+    --blanco:#ffffff;/* color para textos sobre fondos oscuro*/
+    --naranja:#FF8C00 ;/* color para cento para reslatar (links bordes)*/
+    --fuente-principal:'Lato', sans-serif;
+    --max-width:1200px; /* ancho maximo de la  pantalla*/
+    --gap:2rem; /* espaciado uniforme entre elementos*/
+}
+ /* reset & base*/
+ *{
+    margin: 0; /* eliminamos los margenes que vienen por defecto*/
+    padding: 0;/* elimina rellenos internos por defecto*/
+    box-sizing: border-box;/* hace que el padding no agrande el ancho total d las cajas*/
+
+ }
+
+ body{
+    font-family: var(--fuente-principal);/* aplicamos lato a todo el sitio */
+    line-height: 1.6;/* mejora la lectura dejando espacio entre lineas de texto*/
+    color: #333;/* color gris oscuro para el trexto principal*/
+
+ }
+    /* congtenededor para centrar el sitio y que no supere los 1200 px*/
+    .container{
+        max-width: var(--max-width);
+        margin: 0 auto; /* centra el bloque horizontalmente*/
+        width: 90%;/* en pantallas chicas deja un margen del 5 % a los lados*/
+
+    }
+
+    /* header &  nav*/
+    header{
+        background-color: var(--verde-bosque);
+        padding: 1.5rem 0;
+    }
+    .header-flex{
+        display: flex;/*alinea el logo y el menu en la misma fila*/
+        justify-content: space-between;/* manda el logo a la  y menu a la derecha*/
+        align-items: center;/* los centra verticaalmente*/
+    }
+
+    header h1 span{
+        color: var(--naranja);/* pinta solo la palabra felices de  naranja*/
+    }
+     nav ul { /* pone nav ul porqe es par todos los ul que tengan adelante nav*/
+        display: flex;/* alinea los link horizontalmente*/
+        list-style: none;/* quita los puntos negros dela lista*/
+        gap: var(--gap);/* separa los lonk entre si */
+     }
+     nav a{
+        color: var(--blanco);
+        text-decoration: none; /* quita el subrayado de los link*/
+        font-weight: 700;/* pone la letra negrita*/
+        transition: 0.3s;/*suaviza el cambio de color al pasar ell mouse*/
+     }
+     /* estado hover paasa el mouse y clase activa pagina actual*/
+     nav a:hover,
+     nav a.activo{
+        color: var(--naranja);
+     }
+     .hero{
+        background-color: var(--verde-bosque);
+        color: var(--blanco);
+        padding: 4rem 2rem;/* mucho espacio arriba y abajo*/
+        text-align: center;
+        border-radius: 8px;
+        margin-top: 2rem;
+     }
+    .hero h2{
+        font-size: 2.5rem;/* tamaño grande para el titulo principal*/
+        margin-bottom: 1rem;
+    }
+    .cursos-grid{
+        display: flex;
+        flex-wrap: wrap;/* sino caben las 3 tarjetas las manda abajo*/
+        gap: var(--gap);
+        margin: 3rem 0;
+    }
+    .card{
+        flex: 1 1 calc(33.333% - var(--gap));/* calcula ela ncho para que entre 3 por fila*/
+        min-width: 280px;/* evita que las card se achiquen demasiado*/
+        padding:  2rem;
+        border-top: 6px solid var(--naranja);/* el borde dorado/naranja pedido*/
+        background: #f9f9f9;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);/* sombra suave para dar profundidad*/
+
+    }
+   .profesores{
+    display: flex;
+    justify-content: center;/* centra a los doctores en medio de la pantalla*/
+    flex-wrap: wrap;
+    gap: var(--gap);
+    padding: 2rem 0 4rem;
+   }
+   .profe-item{
+    text-align: center;
+   }
+   .profe-avatar{
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;/* circulos gris como marador de posicion de fotos*/
+    border-radius: 50%; /* hace que el div sea un circulos perfecto*/
+    margin: 0 auto 0.5rem;
+ }
+  footer{
+    background-color: var(--verde-bosque);
+    color: var(--blanco);
+    padding: 3rem;
+    text-align: center;
+  }
+  footer a{
+    color: var(--naranja);
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
