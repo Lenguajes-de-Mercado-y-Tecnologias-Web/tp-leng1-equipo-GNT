@@ -213,6 +213,78 @@ table {
 	border: 2px solid seagreen;
 }
 
+.tabla-flex {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 12px;
+	background: white;
+	border: 2px solid seagreen;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.tabla-flex__caption {
+	margin: 0;
+	padding: 10px 12px;
+	font-weight: bold;
+	color: seagreen;
+	background: mintcream;
+	border-bottom: 1px solid seagreen;
+	text-align: left;
+}
+
+.tabla-flex__fila {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 0;
+	width: 100%;
+}
+
+.tabla-flex__celda {
+	flex: 1 1 0;
+	min-width: 0;
+	padding: 10px 12px;
+	text-align: left;
+	border-top: 1px solid seagreen;
+	border-right: 1px solid seagreen;
+	box-sizing: border-box;
+}
+
+.tabla-flex__celda:last-child {
+	border-right: 0;
+}
+
+.tabla-flex__fila--encabezado .tabla-flex__celda {
+	background: seagreen;
+	color: white;
+	font-weight: bold;
+	border-top: 0;
+	flex-basis: 0;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado):nth-of-type(odd) .tabla-flex__celda {
+	background: mintcream;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado):nth-of-type(even) .tabla-flex__celda {
+	background: white;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado) .tabla-flex__celda {
+	border-top: 1px solid seagreen;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado) .tabla-flex__celda:first-child {
+	border-left: 0;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado) .tabla-flex__celda:last-child {
+	border-right: 0;
+}
+
 caption {
 	caption-side: top;
 	font-weight: bold;
