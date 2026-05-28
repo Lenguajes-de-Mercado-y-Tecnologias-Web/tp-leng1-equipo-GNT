@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Semillas - ONG Verde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <h1>ONG Verde</h1>
+    <a class="logo-link" href="index.html" aria-label="Ir al inicio">
+      <img class="site-logo" src="Logo/logo-ong-verde.svg" alt="Logo ONG Verde">  
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="somos.html">Quiénes somos</a></li>
+        <li><a href="registro.html">Registro</a></li>
+        <li><a href="nuestras_oficinas.html">Nuestras Oficinas</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="contenedor-intercambio">
+    <h2>Banco de Semillas</h2>
+    <p>Regístrate para participar en nuestras jornadas de intercambio, donar lo que te sobra o conseguir nuevas variedades para tu huerta.</p>
+
+    <form class="formulario-intercambio">
+      <div>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      
+      <div>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+      </div>
+
+      <div>
+        <label for="opcion-semillas">¿Qué te gustaría hacer?</label>
+        <select id="opcion-semillas" name="opcion-semillas" required>
+          <option value="" disabled selected>Selecciona una opción...</option>
+          <option value="intercambiar">Intercambiar mis semillas</option>
+          <option value="regalar">Regalar / Donar semillas</option>
+          <option value="comprar">Comprar semillas de la ONG</option>
+          <option value="comunidad">Intercambiar con la comunidad en general</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="detalles">¿Qué semillas tienes o estás buscando?</label>
+        <textarea id="detalles" name="detalles" rows="4" placeholder="Ej: Tengo semillas de tomate platense, busco de albahaca..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-enviar">Anotarme al Intercambio</button>
+
+    </form>
+  </main>
+</body>
+</html>

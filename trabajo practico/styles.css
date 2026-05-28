@@ -389,3 +389,11 @@ tr:nth-child(even) td {
 .wa-contacto i {
     color: white !important;
 }
+
+.contenedor-intercambio {
+	margin: 20px;
+}
+
+.formulario-intercambio {
+	margin: 20px;
+}
