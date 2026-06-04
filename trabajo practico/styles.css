@@ -1,10 +1,48 @@
 body {
 	font-family: Arial, sans-serif;
-	line-height: 1.5;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
-	background: honeydew;
+	background: linear-gradient(180deg, #f4fff7 0%, #eef9f2 45%, #f9fbf8 100%);
 	color: darkslategray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #2f6b3a;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 0.75rem;
+}
+
+h1 {
+	font-size: clamp(2rem, 3vw, 2.8rem);
+	letter-spacing: -0.02em;
+}
+
+h2 {
+	font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+}
+
+h3 {
+	font-size: clamp(1.25rem, 1.9vw, 1.65rem);
+}
+
+h4 {
+	font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.lead {
+	font-size: 1.12rem;
+	line-height: 1.7;
 }
 
 section {
@@ -15,10 +53,11 @@ section {
 footer {
 	padding: 10px 20px;
 	text-align: center;
-	font-size: 0.85rem;
-	background-color: lightgray;
-	border-top: 1px solid #999;
+	font-size: 0.9rem;
+	background-color: rgba(255, 255, 255, 0.72);
+	border-top: 1px solid rgba(47, 107, 58, 0.18);
 	margin-top: 20px;
+	color: #2f6b3a;
 }
 
 header {
@@ -42,12 +81,82 @@ header {
 	display: block;
 }
 
-h2 {
-	color: seagreen;
+.hero-ong {
+	background: linear-gradient(135deg, rgba(46, 139, 87, 0.12), rgba(255, 255, 255, 0.92));
+	border: 1px solid rgba(46, 139, 87, 0.14);
+	border-radius: 28px;
+	padding: 24px;
+	box-shadow: 0 18px 45px rgba(47, 107, 58, 0.08);
 }
 
-h3 {
-	color: seagreen;
+.hero-card {
+	background: linear-gradient(180deg, #ffffff 0%, #f4fbf6 100%);
+}
+
+.impacto-metrica {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 118px;
+	overflow-wrap: anywhere;
+	word-break: normal;
+}
+
+.impacto-metrica small {
+	font-size: 0.95rem;
+	line-height: 1.2;
+}
+
+.feature-card {
+	border-radius: 20px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 34px rgba(47, 107, 58, 0.14) !important;
+}
+
+.nav-pills .nav-link {
+	color: #2f6b3a;
+	border-radius: 999px;
+	background: rgba(46, 139, 87, 0.1);
+	border: 1px solid rgba(46, 139, 87, 0.16);
+	font-weight: 600;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus {
+	background: rgba(46, 139, 87, 0.18);
+	color: #21532d;
+}
+
+.nav-pills .nav-link.active {
+	background: linear-gradient(135deg, #2f6b3a, #3c7f48);
+	color: white;
+	box-shadow: 0 8px 18px rgba(47, 107, 58, 0.2);
+}
+
+.text-success-emphasis {
+	color: #2f6b3a !important;
+}
+
+.bg-success-subtle {
+	background-color: #e4f4e9 !important;
+}
+
+.text-bg-success-subtle {
+	background-color: #e4f4e9 !important;
+	color: #2f6b3a !important;
+}
+
+.hero-compact {
+	background: linear-gradient(135deg, rgba(46, 139, 87, 0.12), rgba(255, 255, 255, 0.95));
+	border-radius: 24px;
+}
+
+.climate-card {
+	border-radius: 18px;
 }
 
 nav ul {
@@ -193,7 +302,102 @@ button:hover {
 
 .tabla-clima {
 	display: none;
-	margin: 16px 0;
+	margin: 16px auto;
+	max-width: 980px;
+	width: 100%;
+}
+
+.tabla-clima .card {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.tabla-clima .table-responsive {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.btn-success {
+	background: linear-gradient(135deg, #2f6b3a, #3c7f48);
+	border-color: #2f6b3a;
+	box-shadow: 0 8px 18px rgba(47, 107, 58, 0.14);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+	background: linear-gradient(135deg, #295d33, #356f40);
+	border-color: #295d33;
+	box-shadow: 0 10px 22px rgba(47, 107, 58, 0.2);
+}
+
+.btn-outline-success {
+	color: #2f6b3a;
+	border-color: rgba(47, 107, 58, 0.45);
+	font-weight: 600;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+	background-color: #2f6b3a;
+	border-color: #2f6b3a;
+	color: white;
+}
+
+.btn,
+.btn-lg {
+	border-radius: 999px;
+}
+
+.card {
+	border-color: rgba(47, 107, 58, 0.12);
+}
+
+.table {
+	border-color: rgba(47, 107, 58, 0.24);
+	--bs-table-striped-bg: rgba(46, 139, 87, 0.05);
+	--bs-table-bg: #ffffff;
+}
+
+.table-success {
+	--bs-table-bg: #dff1e4;
+	--bs-table-striped-bg: #dff1e4;
+	--bs-table-color: #214d2e;
+	--bs-table-border-color: rgba(47, 107, 58, 0.2);
+}
+
+a.link-success {
+	text-underline-offset: 0.18em;
+}
+
+@media (max-width: 576px) {
+	.hero-ong {
+		padding: 18px;
+	}
+
+	.hero-card .card-body {
+		padding: 1rem !important;
+	}
+
+	.impacto-metrica {
+		min-height: 96px;
+	}
+
+	.tabla-clima {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.tabla-clima .card-body {
+		padding: 1rem !important;
+	}
+
+	.tabla-clima .h4 {
+		font-size: 1.1rem;
+	}
+
+	.tabla-clima table {
+		font-size: 0.9rem;
+	}
 }
 
 .tabla-clima:target {
@@ -359,20 +563,20 @@ tr:nth-child(even) td {
 }
 
 
-.wa-contacto {
-    display: none; 
-    background-color: seagreen !important; 
-    color: white !important; 
-    padding: 10px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    align-items: center;
-    gap: 10px;
-    transition: 0.3s;
-    border: 1px solid white;
+.wa-flotante-container .wa-contacto {
+	display: none;
+	background-color: seagreen;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	align-items: center;
+	gap: 10px;
+	transition: 0.3s;
+	border: 1px solid white;
 }
 
 
@@ -381,13 +585,13 @@ tr:nth-child(even) td {
 }
 
 
-.wa-contacto:hover {
-    background-color: #2e8b57 !important; /* Un verde un poquito más oscuro */
-    transform: translateX(-5px);
+.wa-flotante-container .wa-contacto:hover {
+	background-color: #2e8b57; /* Un verde un poquito más oscuro */
+	transform: translateX(-5px);
 }
 
-.wa-contacto i {
-    color: white !important;
+.wa-flotante-container .wa-contacto i {
+	color: white;
 }
 
 .contenedor-intercambio {
@@ -395,5 +599,15 @@ tr:nth-child(even) td {
 }
 
 .formulario-intercambio {
-	margin: 20px;
+	max-width: none;
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+.formulario-intercambio .btn-enviar {
+	margin-top: 0;
 }

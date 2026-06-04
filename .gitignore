@@ -1,0 +1,8 @@
+# Ignore downloaded bootstrap archives and example folders
+bootstrap-5.3.8*.zip
+bootstrap-5.3.8-examples/
+
+# User temp files
+*.zip
+.DS_Store
+Thumbs.db
