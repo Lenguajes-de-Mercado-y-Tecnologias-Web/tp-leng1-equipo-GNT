@@ -611,3 +611,15 @@ tr:nth-child(even) td {
 .formulario-intercambio .btn-enviar {
 	margin-top: 0;
 }
+/* Estilo para las fotos de los integrantes */
+.img-perfil-sutil {
+  border: 3px solid #e2e8f0; /* Borde gris muy suave */
+  opacity: 0.85; /* Reduce la intensidad visual de la foto */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.img-perfil-sutil:hover {
+  border-color: #198754; /* Cambia al verde de Bootstrap al pasar el mouse */
+  opacity: 1; /* Se aclara por completo */
+  transform: scale(1.03); /* Crece apenas un toque */
+}
