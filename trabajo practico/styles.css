@@ -1,0 +1,625 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(180deg, #f4fff7 0%, #eef9f2 45%, #f9fbf8 100%);
+	color: darkslategray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #2f6b3a;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 0.75rem;
+}
+
+h1 {
+	font-size: clamp(2rem, 3vw, 2.8rem);
+	letter-spacing: -0.02em;
+}
+
+h2 {
+	font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+}
+
+h3 {
+	font-size: clamp(1.25rem, 1.9vw, 1.65rem);
+}
+
+h4 {
+	font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+}
+
+p {
+	margin-bottom: 1rem;
+}
+
+.lead {
+	font-size: 1.12rem;
+	line-height: 1.7;
+}
+
+section {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+footer {
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 0.9rem;
+	background-color: rgba(255, 255, 255, 0.72);
+	border-top: 1px solid rgba(47, 107, 58, 0.18);
+	margin-top: 20px;
+	color: #2f6b3a;
+}
+
+header {
+	padding: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	padding-right: 220px;
+}
+
+.logo-link {
+	position: fixed;
+	top: 14px;
+	right: 20px;
+	display: inline-block;
+	z-index: 1000;
+}
+
+.site-logo {
+	width: 170px;
+	height: auto;
+	display: block;
+}
+
+.hero-ong {
+	background: linear-gradient(135deg, rgba(46, 139, 87, 0.12), rgba(255, 255, 255, 0.92));
+	border: 1px solid rgba(46, 139, 87, 0.14);
+	border-radius: 28px;
+	padding: 24px;
+	box-shadow: 0 18px 45px rgba(47, 107, 58, 0.08);
+}
+
+.hero-card {
+	background: linear-gradient(180deg, #ffffff 0%, #f4fbf6 100%);
+}
+
+.impacto-metrica {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 118px;
+	overflow-wrap: anywhere;
+	word-break: normal;
+}
+
+.impacto-metrica small {
+	font-size: 0.95rem;
+	line-height: 1.2;
+}
+
+.feature-card {
+	border-radius: 20px;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 14px 34px rgba(47, 107, 58, 0.14) !important;
+}
+
+.nav-pills .nav-link {
+	color: #2f6b3a;
+	border-radius: 999px;
+	background: rgba(46, 139, 87, 0.1);
+	border: 1px solid rgba(46, 139, 87, 0.16);
+	font-weight: 600;
+}
+
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus {
+	background: rgba(46, 139, 87, 0.18);
+	color: #21532d;
+}
+
+.nav-pills .nav-link.active {
+	background: linear-gradient(135deg, #2f6b3a, #3c7f48);
+	color: white;
+	box-shadow: 0 8px 18px rgba(47, 107, 58, 0.2);
+}
+
+.text-success-emphasis {
+	color: #2f6b3a !important;
+}
+
+.bg-success-subtle {
+	background-color: #e4f4e9 !important;
+}
+
+.text-bg-success-subtle {
+	background-color: #e4f4e9 !important;
+	color: #2f6b3a !important;
+}
+
+.hero-compact {
+	background: linear-gradient(135deg, rgba(46, 139, 87, 0.12), rgba(255, 255, 255, 0.95));
+	border-radius: 24px;
+}
+
+.climate-card {
+	border-radius: 18px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	padding: 0;
+	margin: 10px 0 0;
+}
+
+nav a {
+	color: seagreen;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 8px 12px;
+	border-radius: 6px;
+	transition: background-color 0.2s;
+}
+
+nav a:hover {
+	background-color: #e0f2f1;
+}
+
+article {
+	margin: 20px 0;
+	padding: 16px;
+	background: white;
+	border-radius: 8px;
+	border-left: 4px solid seagreen;
+}
+
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+article iframe {
+	width: 100%;
+	height: 450px;
+	border: none;
+}
+
+article table {
+	border: none;
+}
+
+article table td {
+	border: none;
+	padding: 12px;
+	width: 50%;
+	text-align: center;
+}
+
+article table img {
+	max-width: 90%;
+	height: auto;
+	border-radius: 8px;
+}
+
+
+
+
+.imagen-huerta {
+	max-width: 520px;
+	margin: 14px 0 18px;
+	padding: 10px;
+	background: white;
+	border: 1px solid gainsboro;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(47, 107, 58, 0.08);
+}
+
+.imagen-huerta img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.imagen-huerta figcaption {
+	margin-top: 8px;
+	font-size: 0.95rem;
+	color: darkolivegreen;
+}
+
+form {
+	max-width: 520px;
+	background: white;
+	border: 1px solid gainsboro;
+	border-radius: 12px;
+	padding: 18px;
+	box-shadow: 0 6px 18px rgba(47, 107, 58, 0.08);
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin: 12px 0 6px;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px 12px;
+	border: 1px solid darkseagreen;
+	border-radius: 8px;
+	font: inherit;
+}
+
+button {
+	margin-top: 16px;
+	padding: 10px 16px;
+	border: 0;
+	border-radius: 8px;
+	background: seagreen;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background: darkgreen;
+}
+
+.texto-ayuda {
+	margin: 14px 0 10px;
+	font-weight: bold;
+	color: seagreen;
+}
+
+.acciones-clima {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.acciones-clima button {
+	margin-top: 0;
+}
+
+.tabla-clima {
+	display: none;
+	margin: 16px auto;
+	max-width: 980px;
+	width: 100%;
+}
+
+.tabla-clima .card {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.tabla-clima .table-responsive {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.btn-success {
+	background: linear-gradient(135deg, #2f6b3a, #3c7f48);
+	border-color: #2f6b3a;
+	box-shadow: 0 8px 18px rgba(47, 107, 58, 0.14);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+	background: linear-gradient(135deg, #295d33, #356f40);
+	border-color: #295d33;
+	box-shadow: 0 10px 22px rgba(47, 107, 58, 0.2);
+}
+
+.btn-outline-success {
+	color: #2f6b3a;
+	border-color: rgba(47, 107, 58, 0.45);
+	font-weight: 600;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+	background-color: #2f6b3a;
+	border-color: #2f6b3a;
+	color: white;
+}
+
+.btn,
+.btn-lg {
+	border-radius: 999px;
+}
+
+.card {
+	border-color: rgba(47, 107, 58, 0.12);
+}
+
+.table {
+	border-color: rgba(47, 107, 58, 0.24);
+	--bs-table-striped-bg: rgba(46, 139, 87, 0.05);
+	--bs-table-bg: #ffffff;
+}
+
+.table-success {
+	--bs-table-bg: #dff1e4;
+	--bs-table-striped-bg: #dff1e4;
+	--bs-table-color: #214d2e;
+	--bs-table-border-color: rgba(47, 107, 58, 0.2);
+}
+
+a.link-success {
+	text-underline-offset: 0.18em;
+}
+
+@media (max-width: 576px) {
+	.hero-ong {
+		padding: 18px;
+	}
+
+	.hero-card .card-body {
+		padding: 1rem !important;
+	}
+
+	.impacto-metrica {
+		min-height: 96px;
+	}
+
+	.tabla-clima {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.tabla-clima .card-body {
+		padding: 1rem !important;
+	}
+
+	.tabla-clima .h4 {
+		font-size: 1.1rem;
+	}
+
+	.tabla-clima table {
+		font-size: 0.9rem;
+	}
+}
+
+.tabla-clima:target {
+	display: block;
+}
+
+.aviso-clima {
+	font-style: italic;
+	color: darkolivegreen;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 12px;
+	background: white;
+	border: 2px solid seagreen;
+}
+
+.tabla-flex {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 12px;
+	background: white;
+	border: 2px solid seagreen;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.tabla-flex__caption {
+	margin: 0;
+	padding: 10px 12px;
+	font-weight: bold;
+	color: seagreen;
+	background: mintcream;
+	border-bottom: 1px solid seagreen;
+	text-align: left;
+}
+
+.tabla-flex__fila {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin: 0;
+	width: 100%;
+}
+
+.tabla-flex__celda {
+	flex: 1 1 0;
+	min-width: 0;
+	padding: 10px 12px;
+	text-align: left;
+	border-top: 1px solid seagreen;
+	border-right: 1px solid seagreen;
+	box-sizing: border-box;
+}
+
+.tabla-flex__celda:last-child {
+	border-right: 0;
+}
+
+.tabla-flex__fila--encabezado .tabla-flex__celda {
+	background: seagreen;
+	color: white;
+	font-weight: bold;
+	border-top: 0;
+	flex-basis: 0;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado):nth-of-type(odd) .tabla-flex__celda {
+	background: mintcream;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado):nth-of-type(even) .tabla-flex__celda {
+	background: white;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado) .tabla-flex__celda {
+	border-top: 1px solid seagreen;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado) .tabla-flex__celda:first-child {
+	border-left: 0;
+}
+
+.tabla-flex__fila:not(.tabla-flex__fila--encabezado) .tabla-flex__celda:last-child {
+	border-right: 0;
+}
+
+caption {
+	caption-side: top;
+	font-weight: bold;
+	color: seagreen;
+	margin-bottom: 8px;
+}
+
+th,
+td {
+	border: 1px solid seagreen;
+	padding: 10px 12px;
+	text-align: left;
+}
+
+th {
+	background: seagreen;
+	color: white;
+}
+
+tr:nth-child(even) td {
+	background: mintcream;
+}
+
+@media (max-width: 640px) {
+	header {
+		padding: 14px;
+		padding-right: 14px;
+		padding-top: 82px;
+	}
+
+	section {
+		padding: 14px;
+	}
+
+	.logo-link {
+		top: 10px;
+		right: 14px;
+	}
+
+	.site-logo {
+		width: 140px;
+	}
+
+	.acciones-clima button {
+		width: 100%;
+	}
+}
+.wa-flotante-container {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    font-family: Arial, sans-serif;
+}
+
+
+.wa-boton-principal {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px; /* Forma de cápsula */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+.wa-flotante-container .wa-contacto {
+	display: none;
+	background-color: seagreen;
+	color: white;
+	padding: 10px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	align-items: center;
+	gap: 10px;
+	transition: 0.3s;
+	border: 1px solid white;
+}
+
+
+.wa-flotante-container:hover .wa-contacto {
+    display: flex;
+}
+
+
+.wa-flotante-container .wa-contacto:hover {
+	background-color: #2e8b57; /* Un verde un poquito más oscuro */
+	transform: translateX(-5px);
+}
+
+.wa-flotante-container .wa-contacto i {
+	color: white;
+}
+
+.contenedor-intercambio {
+	margin: 20px;
+}
+
+.formulario-intercambio {
+	max-width: none;
+	background: transparent;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	box-shadow: none;
+	margin: 0;
+}
+
+.formulario-intercambio .btn-enviar {
+	margin-top: 0;
+}
+/* Estilo para las fotos de los integrantes */
+.img-perfil-sutil {
+  border: 3px solid #e2e8f0; /* Borde gris muy suave */
+  opacity: 0.85; /* Reduce la intensidad visual de la foto */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.img-perfil-sutil:hover {
+  border-color: #198754; /* Cambia al verde de Bootstrap al pasar el mouse */
+  opacity: 1; /* Se aclara por completo */
+  transform: scale(1.03); /* Crece apenas un toque */
+}
