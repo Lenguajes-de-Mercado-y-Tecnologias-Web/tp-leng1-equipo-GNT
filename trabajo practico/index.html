@@ -7,13 +7,19 @@
   <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body><div class="contenedor">
+
+    <button onclick="cambioClaseContenedor()">🔅</button>
+    
   <header class="container py-4">
+  
     <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
       <div>
         <h1 class="mb-1">ONG Verde</h1>
         <p class="mb-0 text-success-emphasis">Huertas urbanas, compostaje y semillas para una comunidad más viva.</p>
       </div>
+      <div class="d-flex align-items-center gap-3">
+        
       <a class="logo-link position-static ms-lg-auto" href="index.html" aria-label="Ir al inicio">
         <img class="site-logo" src="logo/logo-ong-verde.svg" alt="Logo ONG Verde">
       </a>
@@ -73,6 +79,7 @@
         </div>
       </div>
     </div>
+  
   </section>
 
   <section class="container py-3">
@@ -153,7 +160,7 @@
     <h2>Sumate</h2>
     <p>Dejanos tu mail y te llevamos al formulario completo.</p>
     <form action="registro.html" method="GET">
-      <label for="email">Email:</label>
+      <label for="email">Email: </label>
       <input id="email" type="email" name="email" required>
 
       <button type="submit">Continuar</button>
@@ -216,12 +223,12 @@
       <button type="submit"> Ver Nuestra huella verde</button>
     </form>
   </section>
-
   <footer>
     <p>© 2026 ONG Verde</p>
   </footer>
-
+    
   <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src ="app.js"></script>
+</div>
 </body>
 </html>
