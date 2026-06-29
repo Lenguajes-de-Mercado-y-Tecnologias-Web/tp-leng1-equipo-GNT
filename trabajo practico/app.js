@@ -1,24 +1,24 @@
-const contenedor = document.querySelector('.contenedor');
-const btnModo = document.getElementById('btn-modo'); // Asegúrar de darle este ID a tu botón
+// app.js
+document.addEventListener('DOMContentLoaded', () => {
+    const contenedor = document.querySelector('.contenedor');
+    const btnModo = document.getElementById('btn-modo');
 
-// 1. Al cargar la página, revisamos si el usuario ya eligió modo oscuro
-if (localStorage.getItem('modo-lectura') === 'activo') {
-    contenedor.classList.add('contenedor-oscuro');
-}
+    if (!contenedor) return; // Si no hay contenedor, no hacemos nada
 
-// 2. Función para alternar
-const cambioClaseContenedor = () => {
-    contenedor.classList.toggle('contenedor-oscuro');
-    
-    // Guardamos la preferencia
-    if (contenedor.classList.contains('contenedor-oscuro')) {
-        localStorage.setItem('modo-lectura', 'activo');
-    } else {
-        localStorage.setItem('modo-lectura', 'inactivo');
+    // 1. Aplicar estado guardado
+    if (localStorage.getItem('modo-lectura') === 'activo') {
+        contenedor.classList.add('contenedor-oscuro');
     }
-}
 
-// Escuchamos el clic
-if (btnModo) {
-    btnModo.addEventListener('click', cambioClaseContenedor);
-}
+    // 2. Definir la función de cambio
+    function cambioClaseContenedor() {
+        contenedor.classList.toggle('contenedor-oscuro');
+        const esActivo = contenedor.classList.contains('contenedor-oscuro');
+        localStorage.setItem('modo-lectura', esActivo ? 'activo' : 'inactivo');
+    }
+
+    // 3. Vincular el evento si el botón existe
+    if (btnModo) {
+        btnModo.addEventListener('click', cambioClaseContenedor);
+    }
+});
