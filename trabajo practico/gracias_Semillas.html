@@ -10,18 +10,11 @@
 </head>
 <body><div class="contenedor">
 
-    <button id="btn-modo" onclick="cambioClaseContenedor()">🔅 <label for="descanzo-vista">Descanzo Vista</label></button>
-  <header class="container py-4">
-    <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between gap-3">
-      <div>
-        <h1 class="mb-1">ONG Verde</h1>
-        <p class="mb-0 text-success-emphasis">Huertas urbanas, compostaje y semillas para una comunidad más viva.</p>
-      </div>
-      <a class="logo-link position-static ms-lg-auto" href="index.html" aria-label="Ir al inicio">
-        <img class="site-logo" src="logo/logo-ong-verde.svg" alt="Logo ONG Verde">
-      </a>
-    </div>
-  </header>
+    <button id="btn-modo" type="button" onclick="cambioClaseContenedor()">
+    🔅 Descanzo Vista
+</button>
+  
+  <div id="header-placeholder"></div>
   
     <main class="container py-5 text-center">
         <div class="card border-0 shadow-lg p-5 max-width-600 mx-auto">
@@ -38,5 +31,6 @@
  </div>
   <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
   <script src ="app.js"></script>
+  <script src="header.js"></script>
 </body>
 </html>
