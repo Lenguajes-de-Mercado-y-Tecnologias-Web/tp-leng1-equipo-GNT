@@ -514,21 +514,21 @@ tr:nth-child(even) td {
 .contenedor.contenedor-oscuro .tabla-flex,
 .contenedor.contenedor-oscuro .tabla-flex__fila,
 .contenedor.contenedor-oscuro .tabla-flex__celda {
-    background-color: #198754 !important;
+    background-color: #5f7f68 !important;
     color: #ffffff !important;
-    border-color: #5d6d7e !important;
+    border-color: #4b6352 !important;
 }
 
 /* 2. Corregir las celdas y filas específicas que tenían colores claros */
 .contenedor.contenedor-oscuro .tabla-flex__fila:nth-of-type(odd) .tabla-flex__celda,
 .contenedor.contenedor-oscuro tr:nth-child(even) td {
-    background-color: #198754 !important; /* Un gris un poco más claro que el fondo principal */
+    background-color: #6f9278 !important;
 }
 
 /* 3. Asegurar que los encabezados de tabla (th) sean legibles */
 .contenedor.contenedor-oscuro th,
 .contenedor.contenedor-oscuro .tabla-flex__fila--encabezado .tabla-flex__celda {
-    background-color: #198754 !important;
+    background-color: #54745d !important;
     color: #ffffff !important;
 }
 
